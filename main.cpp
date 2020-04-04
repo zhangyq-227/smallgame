@@ -60,6 +60,7 @@ void tactoe::playwithcomputer(){
             cout<<"you win!"<<endl;
             break;
         }
+      if(num==9) break;
         
         cout<<"enter the space to display the computer's decision";
         getchar();
@@ -100,6 +101,7 @@ void tactoe::playwithpartner(){
         board[row-1][col-1] = 1;
         printboard();
         num++;
+        if(num==9) break;
         if(gameover()){
             cout<<"you win!";
             return ;
